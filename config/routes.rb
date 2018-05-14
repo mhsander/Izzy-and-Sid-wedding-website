@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get 'welcome/index'
 
-  resources :rsvps, :comments
+  resources :rsvps, :comments, :about, :registry
 
   root 'welcome#index'
 
