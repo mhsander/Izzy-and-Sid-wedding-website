@@ -1,6 +1,6 @@
 <h1>What we need from you:</h1>
 
-  <%= form_with scope: @rsvp, local: true do |form| %>
+  <%= form_with scope: :rsvp, url: rsvps_path, local: true do |form| %>
     <p>
       <%= form.label :Name %>
       <%= form.text_field :Name %>
