@@ -11,25 +11,41 @@
     <div class="rsvps">
       <h1>What we need from you:</h1>
 
-      <%= form_with scope: :rsvp, url: rsvps_path, local: true do |form| %>
+      <%= form_with model: @rsvp, local: true do |form| %>
+        <%# if @rsvp.errors.any? %>
+<!--          <div id="error_explanation">-->
+<!--            <h2>-->
+<!--              <%#= pluralize(@rsvp.errors.count, "error") %> prohibited-->
+<!--              this article from being saved:-->
+<!--            </h2>-->
+<!--            <ul>-->
+              <%# @rsvp.errors.full_messages.each do |msg| %>
+<!--                <li><%#= msg %></li>-->
+              <%# end %>
+<!--            </ul>-->
+<!--          </div>-->
+        <%# end %>
+
         <p>
           <%= form.label :Name %><br>
-          <%= form.text_field :Name %>
+          <%= form.text_field :name %>
         </p>
 
         <p>
           <%= form.label :Address %><br>
-          <%= form.text_field :Address %>
+          <%= form.text_field :address %>
         </p>
 
         <p>
           <%= form.label :Phone %><br>
-          <%= form.text_field :Phone %>
+          <%= form.text_field :phone %>
         </p>
 
         <p>
           <%= form.label :Email %><br>
-          <%= form.text_field :Email %>
+          <%= form.text_field :email %><br>
+          <%= form.label :Email_confirmation %><br>
+          <%= form.text_field :email_confirmation %>
         </p>
 
         <p>
@@ -37,13 +53,13 @@
           <p>Are you coming?</p>
           <%= form.label :yes %>
           <%= form.radio_button(:coming, 'yes') %><br><br>
-        <%= form.label :no %>
+          <%= form.label :no %>
           <%= form.radio_button(:coming, 'no') %>
         </p>
 
         <p>
           <%= form.label :Plus_one_name %><br>
-          <%= form.text_field :Plus_one_name %>
+          <%= form.text_field :plus_one_name %>
         </p>
 
         <p>
@@ -53,7 +69,7 @@
           <%= form.label :no %>
           <%= form.radio_button(:mini_you, 'no') %><br>
           <%= form.label :Name_and_age %><br>
-          <%= form.text_field :Name_and_age %>
+          <%= form.text_field :name_and_age %>
         </p>
 
         <p>
@@ -64,6 +80,15 @@
         I am an average Portlander, I don't eat things that bleed<br>
         <%= form.radio_button(:food, 'brains') %>
         I am a zombie, I eat brains
+        </p>
+
+        <p>
+          <%= form.label :Any_real_food_allergies? %><br>
+          <%= form.text_field :allergies %>
+        </p>
+
+        <p>
+        <%= form.check_box :terms %> I agree that Izzy and Sid are AWESOME!
         </p>
 
         <p>

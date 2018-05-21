@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  </head>
+  <body>
+    <header>
+
+    </header>
+    <div id="rsvp_confirmation">
+      <h1>Your presence is confirmed!</h1>
+      <h2>Name: <%= @rsvp.name %></h2>
+      <h2>Address: <%= @rsvp.address %></h2>
+      <h2>Phone: <%= @rsvp.phone %></h2>
+      <h2>Email: <%= @rsvp.email %></h2>
+      <h2>Are you coming? <%= @rsvp.coming %></h2>
+      <h2>Plus one name: <%= @rsvp.plus_one_name %></h2>
+      <h2>Bringing a mini you? <%= @rsvp.mini_you %></h2>
+      <h2>Food: <%= @rsvp.food %></h2>
+      <H2>Allergies: <%= @rsvp.allergies %></H2>
+
+    </div>
+    <div class="footer">
+      <%= render 'welcome/down_navigation' %>
+    </div>
+  </body>
+</html>

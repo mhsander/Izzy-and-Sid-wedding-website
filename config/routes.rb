@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
   get 'welcome/index'
+  get '/about', to: 'about#index'
+  get '/registry', to: 'registry#index'
 
-  resources :rsvps, :comments, :about, :registry
+  resources :rsvps
+  resources :comments
 
   root 'welcome#index'
 
