@@ -17,8 +17,8 @@
       <h2>Plus one name: <%= @rsvp.plus_one_name %></h2>
       <h2>Bringing a mini you? <%= @rsvp.mini_you %></h2>
       <h2>Food: <%= @rsvp.food %></h2>
-      <H2>Allergies: <%= @rsvp.allergies %></H2>
-
+      <h2>Allergies: <%= @rsvp.allergies %></h2>
+      <h2><%= link_to 'Edit RSVP', edit_rsvp_path(@rsvp) %></h2>
     </div>
     <div class="footer">
       <%= render 'welcome/down_navigation' %>
