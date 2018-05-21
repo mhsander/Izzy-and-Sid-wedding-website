@@ -1,15 +1,15 @@
 <%= form_with model: @rsvp, local: true do |form| %>
   <% if @rsvp.errors.any? %>
-            <div id="error_explanation">
-              <h2>
-                Oooooops! RSVP not saved due to <%= pluralize(@rsvp.errors.count, "error") %>:
-              </h2>
-              <ul>
-  <% @rsvp.errors.full_messages.each do |msg| %>
-                  <li><%= msg %></li>
-  <% end %>
-              </ul>
-            </div>
+      <div id="error_explanation">
+        <h2>
+          Oooooops! RSVP not saved due to <%= pluralize(@rsvp.errors.count, "error") %>:
+        </h2>
+        <ul>
+           <% @rsvp.errors.full_messages.each do |msg| %>
+             <li><%= msg %></li>
+            <% end %>
+        </ul>
+      </div>
   <% end %>
 
   <p>

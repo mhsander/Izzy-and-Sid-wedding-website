@@ -1,49 +1,48 @@
 <!DOCTYPE html>
-<html>
-<head>
+  <html>
+  <head>
 
-</head>
-<body>
-  <table>
-    <tr>
-      <th>Name</th>
-      <th>Address</th>
-      <th>Phone</th>
-      <th>Email</th>
-      <th>Coming</th>
-      <th>Plus one</th>
-      <th>Mini you</th>
-      <th>Mini you names and age</th>
-      <th>Food</th>
-      <th>Food alergies</th>
-      <th colspan="3"></th>
-    </tr>
-
-    <% @rsvps.each do |rsvp| %>
+  </head>
+  <body>
+    <table>
       <tr>
-        <td><%= rsvp.name %></td>
-        <td><%= rsvp.address %></td>
-        <td><%= rsvp.phone %></td>
-        <td><%= rsvp.email %></td>
-        <td><%= rsvp.coming %></td>
-        <td><%= rsvp.plus_one_name %></td>
-        <td><%= rsvp.mini_you %></td>
-        <td><%= rsvp.name_and_age %></td>
-        <td><%= rsvp.food %></td>
-        <td><%= rsvp.allergies %></td>
-        <td><%= link_to 'Show', rsvp_path(rsvp) %></td>
-        <td><%= link_to 'Edit', edit_rsvp_path(rsvp) %></td>
-        <td><%= link_to 'Destroy', rsvp_path(rsvp),
-                        method: :delete,
-                        data: { confirm: 'Isra, are you sure?' } %></td>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Phone</th>
+        <th>Email</th>
+        <th>Coming</th>
+        <th>Plus one</th>
+        <th>Mini you</th>
+        <th>Mini you names and age</th>
+        <th>Food</th>
+        <th>Food alergies</th>
+        <th colspan="3"></th>
       </tr>
-    <% end %>
-  </table>
-  <%= link_to 'NEW', 'rsvps/new' %>
 
-  <div class="footer">
-    <%= render 'welcome/down_navigation' %>
-  </div>
+      <% @rsvps.each do |rsvp| %>
+        <tr>
+          <td><%= rsvp.name %></td>
+          <td><%= rsvp.address %></td>
+          <td><%= rsvp.phone %></td>
+          <td><%= rsvp.email %></td>
+          <td><%= rsvp.coming %></td>
+          <td><%= rsvp.plus_one_name %></td>
+          <td><%= rsvp.mini_you %></td>
+          <td><%= rsvp.name_and_age %></td>
+          <td><%= rsvp.food %></td>
+          <td><%= rsvp.allergies %></td>
+          <td><%= link_to 'Show', rsvp_path(rsvp) %></td>
+          <td><%= link_to 'Edit', edit_rsvp_path(rsvp) %></td>
+          <td><%= link_to 'Destroy', rsvp_path(rsvp),
+                          method: :delete,
+                          data: { confirm: 'Isra, are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </table>
 
-</body>
+    <div class="footer">
+      <%= render 'welcome/down_navigation' %>
+    </div>
+
+  </body>
 </html>
