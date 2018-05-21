@@ -1,64 +1,79 @@
-<h1>What we need from you:</h1>
+<!DOCTYPE html>
+<html>
+  <head>
 
-  <%= form_with scope: :rsvp, url: rsvps_path, local: true do |form| %>
-    <p>
-      <%= form.label :Name %>
-      <%= form.text_field :Name %>
-    </p>
+  </head>
+  <body>
+    <header>
 
-    <p>
-      <%= form.label :Address %>
-      <%= form.text_field :Address %>
-    </p>
 
-    <p>
-      <%= form.label :Phone %>
-      <%= form.text_field :Phone %>
-    </p>
+    </header>
+    <div class="rsvps">
+      <h1>What we need from you:</h1>
 
-    <p>
-      <%= form.label :Email %>
-      <%= form.text_field :Email %>
-    </p>
+      <%= form_with scope: :rsvp, url: rsvps_path, local: true do |form| %>
+        <p>
+          <%= form.label :Name %><br>
+          <%= form.text_field :Name %>
+        </p>
 
-    <p>
-      <h2>RSVP</h2>
-      <p>Are_you_coming?</p>
-      <%= form.label :yes %>
-      <%= form.radio_button(:coming, 'yes') %>
-      <%= form.label :no %>
-      <%= form.radio_button(:coming, 'no') %>
-    </p>
+        <p>
+          <%= form.label :Address %><br>
+          <%= form.text_field :Address %>
+        </p>
 
-    <p>
-      <%= form.label :Plus_1? %>
-      <%= form.text_field :Plus_1? %>
-    </p>
+        <p>
+          <%= form.label :Phone %><br>
+          <%= form.text_field :Phone %>
+        </p>
 
-    <p>
-      <%= form.label :Bringing_a_mini_you? %>
-      <%= form.label :yes %>
-      <%= form.radio_button(:mini_you, 'yes') %>
-      <%= form.label :no %>
-      <%= form.radio_button(:mini_you, 'no') %><br>
-      <%= form.label :How_many_and_ages %>
-      <%= form.text_field :How_many_and_ages %>
-    </p>
+        <p>
+          <%= form.label :Email %><br>
+          <%= form.text_field :Email %>
+        </p>
 
-    <p>
-      <h2>Food</h2>
-      <%= form.label :Average %> Portlander, I eat everything
-      <%= form.radio_button(:food, 'everything') %><br>
-      <%= form.label :Average %> Portlander, I don't eat things that bleed
-      <%= form.radio_button(:food, 'no blood') %><br>
-      <%= form.label :I %> eat babies
-      <%= form.radio_button(:food, 'babies') %><br>
-    </p>
+        <p>
+          <h2>RSVP</h2>
+          <p>Are you coming?</p>
+          <%= form.label :yes %>
+          <%= form.radio_button(:coming, 'yes') %><br><br>
+        <%= form.label :no %>
+          <%= form.radio_button(:coming, 'no') %>
+        </p>
 
-    <p>
-      <%= form.submit %>
-    </p>
+        <p>
+          <%= form.label :Plus_one_name %><br>
+          <%= form.text_field :Plus_one_name %>
+        </p>
 
-  <% end %>
+        <p>
+        <p><%= form.label :Bringing_a_mini_you? %></p>
+          <%= form.label :yes %>
+          <%= form.radio_button(:mini_you, 'yes') %><br><br>
+          <%= form.label :no %>
+          <%= form.radio_button(:mini_you, 'no') %><br>
+          <%= form.label :Name_and_age %><br>
+          <%= form.text_field :Name_and_age %>
+        </p>
 
-<%= render 'welcome/down_navigation' %>
+        <p>
+          <h2>Food</h2>
+        <%= form.radio_button(:food, 'everything') %>
+        I am an average Portlander, I eat everything<br>
+        <%= form.radio_button(:food, 'no blood') %>
+        I am an average Portlander, I don't eat things that bleed<br>
+        <%= form.radio_button(:food, 'brains') %>
+        I am a zombie, I eat brains
+        </p>
+
+        <p>
+          <%= form.submit %>
+        </p>
+
+      <% end %>
+    </div>
+    <div class="footer">
+      <%= render 'welcome/down_navigation' %>
+    </div>
+  </body>
+</html>

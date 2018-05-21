@@ -1,26 +1,25 @@
-<h1>Wall</h1>
+<!DOCTYPE html>
+<html>
+  <head>
 
-<%= form_with scope: :comment, url: comments_path, local: true do |form| %>
-  <p>
-    <%= form.label :Name %><br>
-    <%= form.text_field :name %>
-  </p>
+  </head>
+  <body>
+    <header>
 
-  <p>
-    <%= form.label :Comment %><br>
-    <%= form.text_area :text %>
-  </p>
+    </header>
+    <div class="comments">
+      <h1>Wall</h1>
+      <%= render 'form' %>
 
-  <%= form.submit %>
-
-<% end %>
-
-<% @comments.each do |comment| %>
-  <p>
-    <%= comment.name %><br>
-    <%= comment.text %>
-  </p>
-
-<% end %>
-
-<%= render 'welcome/down_navigation' %>
+      <% @comments.each do |comment| %>
+        <p>
+          <%= comment.name %><br>
+          <%= comment.text %>
+        </p>
+      <% end %>
+    </div>
+    <div class="footer">
+      <%= render 'welcome/down_navigation' %>
+    </div>
+  </body>
+</html>

@@ -10,11 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180514163948) do
+ActiveRecord::Schema.define(version: 20180521015010) do
 
   create_table "comments", force: :cascade do |t|
     t.string "name"
     t.text "text"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "rsvps", force: :cascade do |t|
+    t.string "name"
+    t.string "address"
+    t.string "phone"
+    t.string "email"
+    t.string "coming"
+    t.string "plus_one_name"
+    t.string "mini_you"
+    t.string "name_and_age"
+    t.string "food"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
