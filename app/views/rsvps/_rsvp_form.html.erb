@@ -19,7 +19,7 @@
 
   <p>
     <%= form.label :Address %><br>
-    <%= form.text_field :address %>
+    <%= form.text_area :address, placeholder: 'House number, Street, Apt. number, City, State, Zip code'  %>
   </p>
 
   <p>
@@ -29,7 +29,7 @@
 
   <p>
     <%= form.label :Email %><br>
-    <%= form.text_field :email %><br>
+    <%= form.text_field :email %><br><br>
     <%= form.label :Email_confirmation %><br>
     <%= form.text_field :email_confirmation %>
   </p>
@@ -53,7 +53,7 @@
   <%= form.label :yes %>
   <%= form.radio_button(:mini_you, 'yes') %><br><br>
   <%= form.label :no %>
-  <%= form.radio_button(:mini_you, 'no') %><br>
+  <%= form.radio_button(:mini_you, 'no') %><br><br>
   <%= form.label :Name_and_age %><br>
   <%= form.text_field :name_and_age %>
   </p>
