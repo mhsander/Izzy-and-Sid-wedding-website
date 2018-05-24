@@ -23,6 +23,7 @@ class RsvpsController < ApplicationController
     @rsvp = Rsvp.new(rsvp_params)
 
     if @rsvp.save
+      RsvpMailer.rsvp_confirmation(@rsvp).deliver_now
       redirect_to @rsvp
     else
       render 'new'
@@ -33,6 +34,7 @@ class RsvpsController < ApplicationController
     @rsvp = Rsvp.find(params[:id])
 
     if @rsvp.update(rsvp_params)
+      RsvpMailer.rsvp_confirmation(@rsvp).deliver_now
       redirect_to @rsvp
     else
       render 'edit'
