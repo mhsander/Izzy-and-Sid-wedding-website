@@ -8,7 +8,10 @@ class RsvpMailer < ApplicationMailer
   def rsvp_confirmation(rsvp)
     @rsvp = rsvp
 
-    mail to: @rsvp.email,
-         subject: "RSVP confirmed for Israelle and Sidney's Wedding"
+    # mail to: @rsvp.email,
+    #      subject: "RSVP confirmed for Israelle and Sidney's Wedding"
+
+    mail(:to => @rsvp.email,
+         :subject => "Registration Confirmation for Awesome App")
   end
 end
