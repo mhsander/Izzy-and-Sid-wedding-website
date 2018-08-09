@@ -3,7 +3,11 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .rsvps {
-  text-align: justify;
-  padding: 0.5em 1em;
+  //text-align: justify;
+  padding: 20px;
+  margin: 5px;
 }
 
+.rsvps h1, h2, h3, h4 {
+  text-align: left;
+}
