@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="3b8bf6ec-931f-4a52-86a3-e5e7df4b4195" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/about/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/about/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/welcome.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/welcome.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/rsvps/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/rsvps/new.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/welcome/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/welcome/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/powells.jpg" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -30,45 +32,75 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="erb" value="4" />
+          <entry key="css" value="1" />
+          <entry key="erb" value="8" />
           <entry key="gitignore" value="1" />
           <entry key="rb" value="7" />
+          <entry key="scss" value="1" />
           <entry key="yml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="CSS" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="RHTML" value="4" />
+          <entry key="RHTML" value="8" />
           <entry key="Ruby" value="7" />
+          <entry key="SCSS" value="1" />
           <entry key="YAML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="erb" value="613" />
+          <entry key="erb" value="743" />
           <entry key="rb" value="48" />
+          <entry key="scss" value="66" />
           <entry key="yml" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="RHTML" value="613" />
+          <entry key="RHTML" value="743" />
           <entry key="Ruby" value="48" />
+          <entry key="SCSS" value="66" />
           <entry key="YAML" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.actions.runAnything" />
       <usages-collector id="statistics.js.language.service.starts" />
     </session>
+    <session id="-205693339">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="erb" value="102" />
+          <entry key="scss" value="379" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="RHTML" value="102" />
+          <entry key="SCSS" value="379" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open" />
+      <usages-collector id="statistics.file.extensions.open" />
+      <usages-collector id="statistics.actions.runAnything" />
+      <usages-collector id="statistics.js.language.service.starts" />
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/about/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="47" column="21" lean-forward="true" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
+            <state relative-caret-position="1335">
+              <caret line="89" column="15" selection-start-line="89" selection-start-column="15" selection-end-line="89" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -76,8 +108,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/welcome/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="41" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
+            <state relative-caret-position="120">
+              <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/welcome.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1247">
+              <caret line="6" column="17" lean-forward="true" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -108,10 +149,8 @@
         <option value="$PROJECT_DIR$/app/views/rsvps/casamento.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/rsvps/edit.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/rsvps/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/welcome/_down_navigation.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/rsvps.scss" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/welcome.scss" />
         <option value="$PROJECT_DIR$/app/views/rsvp_mailer/rsvp_confirmation.text.erb" />
         <option value="$PROJECT_DIR$/test/mailers/previews/rsvp_mailer_preview.rb" />
         <option value="$PROJECT_DIR$/app/views/rsvp_mailer/rsvp_confirmation.html.erb" />
@@ -130,8 +169,10 @@
         <option value="$PROJECT_DIR$/config/initializers/secret_token.rb" />
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
         <option value="$PROJECT_DIR$/config/secrets.yml" />
-        <option value="$PROJECT_DIR$/app/views/welcome/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/about/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/rsvps/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/welcome/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/welcome.scss" />
       </list>
     </option>
   </component>
@@ -146,10 +187,9 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="820" />
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="width" value="312" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -176,7 +216,34 @@
               <item name="Izzy-and-Sid-wedding-website" type="b2602c69:ProjectViewProjectNode" />
               <item name="Izzy-and-Sid-wedding-website" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Izzy-and-Sid-wedding-website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Izzy-and-Sid-wedding-website" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Izzy-and-Sid-wedding-website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Izzy-and-Sid-wedding-website" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Izzy-and-Sid-wedding-website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Izzy-and-Sid-wedding-website" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="about" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Izzy-and-Sid-wedding-website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Izzy-and-Sid-wedding-website" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="rsvps" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Izzy-and-Sid-wedding-website" type="b2602c69:ProjectViewProjectNode" />
@@ -339,18 +406,19 @@
       <updated>1526866307261</updated>
       <workItem from="1526866308744" duration="18739000" />
       <workItem from="1533264287526" duration="2450000" />
-      <workItem from="1533497427152" duration="4517000" />
+      <workItem from="1533497427152" duration="6910000" />
+      <workItem from="1533600654380" duration="5725000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38789000" />
+    <option name="totallyTimeSpent" value="46907000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="820" extended-state="0" />
+    <frame x="0" y="0" width="744" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28612304" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.0056980057" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -362,7 +430,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.29986244" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.09529553" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.3287879" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3287879" />
@@ -416,7 +484,7 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../../ruby/rails/blog/app/views/welcome/_menu.html.erb" />
+    <entry file="file://$USER_HOME$/ruby/rails/blog/app/views/welcome/_menu.html.erb" />
     <entry file="file://$PROJECT_DIR$/app/models/comment.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -424,9 +492,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../ruby/rails/blog/app/views/books/show.html.erb" />
-    <entry file="file://$PROJECT_DIR$/../../ruby/rails/blog/app/views/books/edit.html.erb" />
-    <entry file="file://$PROJECT_DIR$/../../ruby/rails/blog/app/views/books/new.html.erb" />
+    <entry file="file://$USER_HOME$/ruby/rails/blog/app/views/books/show.html.erb" />
+    <entry file="file://$USER_HOME$/ruby/rails/blog/app/views/books/edit.html.erb" />
+    <entry file="file://$USER_HOME$/ruby/rails/blog/app/views/books/new.html.erb" />
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -434,8 +502,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../ruby/rails/blog/app/views/books/index.html.erb" />
-    <entry file="file://$PROJECT_DIR$/../../ruby/rails/blog/app/controllers/books_controller.rb" />
+    <entry file="file://$USER_HOME$/ruby/rails/blog/app/views/books/index.html.erb" />
+    <entry file="file://$USER_HOME$/ruby/rails/blog/app/controllers/books_controller.rb" />
     <entry file="file://$PROJECT_DIR$/app/views/comments/new.html.erb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -474,17 +542,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Quintal Urbano/style.css" />
-    <entry file="file://$PROJECT_DIR$/app/views/rsvps/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Quintal Urbano/style.css" />
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/rsvps.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -552,24 +610,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/mailers/application_mailer.rb" />
-    <entry file="file://$PROJECT_DIR$/app/views/rsvps/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="54" column="28" selection-start-line="54" selection-start-column="28" selection-end-line="54" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/environment.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/welcome.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -647,17 +691,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/welcome/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/rsvps/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="41" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
+        <state relative-caret-position="810">
+          <caret line="54" column="28" selection-start-line="54" selection-start-column="28" selection-end-line="54" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/rsvps/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/about/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="47" column="21" lean-forward="true" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
+        <state relative-caret-position="1335">
+          <caret line="89" column="15" selection-start-line="89" selection-start-column="15" selection-end-line="89" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/welcome/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/welcome.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1247">
+          <caret line="6" column="17" lean-forward="true" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
         </state>
       </provider>
     </entry>
