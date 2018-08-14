@@ -11,7 +11,7 @@
         </ul>
       </div>
   <% end %>
-
+<div class="rsvps">
   <p>
     <%= form.label :Name %><br>
     <%= form.text_field :name %>
@@ -19,28 +19,25 @@
 
   <p>
     <%= form.label :Address %><br>
-    <%= form.text_area :address, placeholder: 'House number, Street, Apt. number, City, State, Zip code'  %>
+    <%= form.text_area :address, placeholder: 'House number, Street, Apt. number, City, State, Zip code', size: "52x8" %>
   </p>
-
+  <%= image_tag "rsvp.jpg" %>
   <p>
     <%= form.label :Phone %><br>
     <%= form.text_field :phone %>
   </p>
-
   <p>
     <%= form.label :Email %><br>
     <%= form.email_field :email %><br><br>
     <%= form.label :Email_confirmation %><br>
     <%= form.email_field :email_confirmation %>
   </p>
-
   <p>
-  <h2>RSVP</h2>
-  <p>Are you coming?</p>
-  <%= form.label :yes %>
-  <%= form.radio_button(:coming, 'yes') %><br><br>
-  <%= form.label :no %>
+  <p><bold>RSVP</bold><br> Are you coming?</p>
+  <%= form.radio_button(:coming, 'yes') %>
+  <%= form.label :yes %><br><br>
   <%= form.radio_button(:coming, 'no') %>
+  <%= form.label :no %>
   </p>
 
   <p>
@@ -49,17 +46,17 @@
   </p>
 
   <p>
-  <p><%= form.label :Bringing_a_mini_you? %></p>
-  <%= form.label :yes %>
-  <%= form.radio_button(:mini_you, 'yes') %><br><br>
-  <%= form.label :no %>
-  <%= form.radio_button(:mini_you, 'no') %><br><br>
+  <%= form.label :Bringing_a_mini_you? %><br><br>
+  <%= form.radio_button(:mini_you, 'yes') %>
+  <%= form.label :yes %><br><br>
+  <%= form.radio_button(:mini_you, 'no') %>
+  <%= form.label :no %><br><br>
   <%= form.label :Name_and_age %><br>
   <%= form.text_field :name_and_age %>
   </p>
 
   <p>
-  <h2>Food</h2>
+    <bold>FOOD</bold><br>
   <%= form.radio_button(:food, 'everything') %>
   I am an average Portlander, I eat everything<br>
   <%= form.radio_button(:food, 'no blood') %>
@@ -73,12 +70,13 @@
     <%= form.text_field :allergies %>
   </p>
 
-  <p>
+  <p><br>
     <%= form.check_box :terms %> I agree that Izzy and Sid are AWESOME!
   </p>
 
-  <p>
+  <p><br>
     <%= form.submit %>
   </p>
 
 <% end %>
+</div>

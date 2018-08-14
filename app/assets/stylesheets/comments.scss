@@ -1,3 +1,13 @@
 // Place all the styles related to the Comments controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.comments {
+  text-align: center;
+  display: grid;
+}
+
+.comments h1, h2, h3, h4 {
+  font-family: 'Lobster', cursive;
+  padding: 0,5em;
+}

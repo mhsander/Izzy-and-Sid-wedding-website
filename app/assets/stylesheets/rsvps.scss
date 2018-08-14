@@ -10,4 +10,67 @@
 
 .rsvps h1, h2, h3, h4 {
   text-align: left;
+  font-family: 'Lobster', cursive;
+  padding: 0.5em;
+}
+
+.rsvps p {
+  text-align: left;
+}
+
+.rsvps img {
+  display: flex;
+  border-radius: 5%;
+  width: 50%;
+  max-width: 100%;
+  height: auto;
+  float: right;
+  overflow: auto;
+}
+
+.rsvps input[type=text] {
+  width: 25%;
+  padding: 8px;
+  margin: 5px 0;
+  text-align: left;
+}
+
+.rsvps input[type=email] {
+  width: 25%;
+  padding: 8px;
+  margin: 5px 0;
+  text-align: left;
+}
+
+.rsvps input[type=submit] {
+  padding: 15px;
+  text-align: right;
+  background-color: orange;
+  color: white;
+  font-size: 16px;
+  border-radius: 15px;
+  margin-left: 8%;
+}
+
+.rsvps :hover input[type=submit] {
+  padding: 15px;
+  text-align: right;
+  background-color: darkorange;
+  color: white;
+  font-size: 16px;
+  border-radius: 15px;
+  margin-left: 8%;
+}
+
+.rsvps input[type=radio_button] {
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+}
+
+.rsvps input[type=checkbox] {
+  zoom: 1.6;
+  width: 30px;
+  background-color: pink;
 }
