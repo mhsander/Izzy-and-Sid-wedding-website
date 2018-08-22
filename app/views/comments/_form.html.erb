@@ -1,11 +1,11 @@
 <%= form_with scope: :comment, url: comments_path, local: true do |form| %>
-  <p>
+  <h2 class="comments_form1">
     <%= form.label :Name %><br>
     <%= form.text_field :name %>
-  </p>
-  <p>
+  </h2>
+  <h2 class="comments_form2">
     <%= form.label :Comment %><br>
-    <%= form.text_area :text %>
-  </p>
+    <%= form.text_area :text,  size: "52x8" %>
+  </h2>
   <%= form.submit %>
 <% end %>

@@ -14,7 +14,7 @@
     margin: 0;
 }
 
-.about img {
+.about2 img {
   border-radius: 5%;
   height: auto;
   margin-left: auto;
@@ -24,19 +24,23 @@
 
 .about p {
   text-align: center;
+  color: #1c3411;
 }
 
 .about h1, h2, h3, h4 {
   font-family: 'Lobster', cursive;
   text-align: center;
+  color: #3f2501;
 }
 
 .about2 p, ul, li {
   text-align: justify;
   list-style: none;
+  color: #1c3411;
 }
 
 .about2 h1, h2, h3, h4 {
   text-align: left;
   font-family: 'Lobster', cursive;
+  color: #3f2501;
 }

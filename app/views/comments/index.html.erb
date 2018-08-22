@@ -14,10 +14,10 @@
       <%= render 'form' %>
       <% @comments.each do |comment| %>
         <p>
-          <%= comment.name %>:<br>
+        <strong><%= comment.name %>:</strong><br>
           <%= comment.text %><br>
-          🌻🌻🌻🌻🌻🌻🌻🌻🌻🌻<br>
         </p>
+        🌻🌻🌻🌻🌻🌻🌻🌻🌻🌻<br>
       <% end %>
     </div>
     <div class="footer">

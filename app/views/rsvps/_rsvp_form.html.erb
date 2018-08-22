@@ -16,12 +16,11 @@
     <%= form.label :Name %><br>
     <%= form.text_field :name %>
   </p>
-
+  <%= image_tag "rsvp.jpg" %>
   <p>
     <%= form.label :Address %><br>
     <%= form.text_area :address, placeholder: 'House number, Street, Apt. number, City, State, Zip code', size: "52x8" %>
   </p>
-  <%= image_tag "rsvp.jpg" %>
   <p>
     <%= form.label :Phone %><br>
     <%= form.text_field :phone %>
@@ -33,13 +32,13 @@
     <%= form.email_field :email_confirmation %>
   </p>
   <p>
-  <p><bold>RSVP</bold><br> Are you coming?</p>
+  <p><strong>RSVP</strong><br> Are you coming?</p>
   <%= form.radio_button(:coming, 'yes') %>
   <%= form.label :yes %><br><br>
   <%= form.radio_button(:coming, 'no') %>
   <%= form.label :no %>
   </p>
-
+  <%= image_tag "rsvp2.jpg" %>
   <p>
     <%= form.label :Plus_one_name %><br>
     <%= form.text_field :plus_one_name %>
@@ -56,7 +55,7 @@
   </p>
 
   <p>
-    <bold>FOOD</bold><br>
+    <strong>FOOD</strong><br>
   <%= form.radio_button(:food, 'everything') %>
   I am an average Portlander, I eat everything<br>
   <%= form.radio_button(:food, 'no blood') %>
