@@ -1,7 +1,7 @@
 #Controller for page where guests can leave a comment to the grooms
 
 class CommentsController < ApplicationController
-  http_basic_authenticate_with name: "IsraSid", password: "casamento", only: [:edit, :destroy]
+  http_basic_authenticate_with name: "IzzySid", password: "wedding2019", only: [:edit, :destroy]
 
   def index
     @comments = Comment.all
@@ -16,13 +16,19 @@ class CommentsController < ApplicationController
   end
 
   def edit
-    @comment = comment.find(params[:id])
+    @comment = Comment.find(params[:id])
   end
 
   def create
     @comment = Comment.new(comment_params)
     @comment.save
     redirect_to '/comments'
+  end
+
+  def destroy
+    @comment = Comment.find(params[:id])
+    @comment.destroy
+    redirect_to @comment
   end
 
   private

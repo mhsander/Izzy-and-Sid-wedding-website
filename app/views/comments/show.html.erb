@@ -1,14 +1,17 @@
-<p>
-  <strong>Name</strong>
-  <%= @comment.name %>
-</p>
 
-<p>
-  <strong>Comment</strong>
-  <%= @comment.text %>
-</p>
+  <p>
+    <strong>Name</strong>
+    <%= @comment.name %>
+  </p>
 
+  <p>
+    <strong>Comment</strong>
+    <%= @comment.text %>
+  </p>
 
+  <%= link_to 'Destroy', comment_path(@comment),
+                            method: :delete,
+                            data: { confirm: 'Isra, are you sure?' } %>
 <div class="footer">
   <%= render 'welcome/down_navigation' %>
 </div>
