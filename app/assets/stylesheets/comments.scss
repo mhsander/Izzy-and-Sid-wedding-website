@@ -2,20 +2,33 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.header h1 {
+  font-family: Lobster, cursive;
+}
 .comments {
   text-align: center;
   display: grid;
   color: #1c3411;
+  font-family: roman sd, "Times New Roman", Times, serif;
 }
 
-.comments h1, h2, h3, h4 {
-  font-family: 'Lobster', cursive;
+.comments h1,
+h2,
+h3,
+h4 {
   padding: 0.5em;
   color: #3f2501;
+  font-family: "roman sd";
 }
 
 .comments img {
+  display: block;
+  margin-left: 25%;
+  margin-right: auto;
   border-radius: 5%;
+  width: 50%;
+  max-width: 100%;
+  height: auto;
 }
 
 .comments_form1 {
@@ -34,9 +47,10 @@
   margin-top: 0;
   color: #1c3411;
   padding: 1vw;
+  font-family: "roman sd";
 }
 
-.comments input[type=submit] {
+.comments input[type="submit"] {
   padding: 1vw;
   text-align: center;
   background-color: #3f2501;
@@ -47,7 +61,7 @@
   margin-left: 1vw;
 }
 
-.comments :hover input[type=submit] {
+.comments :hover input[type="submit"] {
   padding: 1vw;
   text-align: center;
   background-color: #1c3411;
@@ -58,7 +72,7 @@
   margin-left: 1vw;
 }
 
-.comments input[type=text] {
+.comments input[type="text"] {
   width: 25%;
   padding: 8px;
   margin: 5px 0;

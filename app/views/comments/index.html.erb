@@ -8,9 +8,8 @@
       <a href="/gif/izzy-face-FjvN_g" title="Izzy Face"><img src="https://i.makeagif.com/media/7-29-2018/FjvN_g.gif" alt="Izzy Face""></a>
       <h1>Israelle<br>&<br>Sidney</h1>
       <a href="/gif/sid-face-bni8XY" title="Sid Face"><img src="https://i.makeagif.com/media/7-29-2018/bni8XY.gif" alt="Sid Face"></a>
-    </header>
+    </header><br><br>
     <div class="comments">
-      <h1>Wall</h1>
       <%= render 'form' %>
       <% @comments.each do |comment| %>
         <p>
@@ -18,7 +17,9 @@
           <%= comment.text %><br>
         </p>
         🌻🌻🌻🌻🌻🌻🌻🌻🌻🌻<br>
-      <% end %>
+      <% end %><br>
+
+    <%= image_tag "comments1.jpg" %><br>
     </div>
     <div class="footer">
       <%= render 'welcome/down_navigation' %>
