@@ -1,9 +1,14 @@
 <!DOCTYPE html>
   <html>
   <head>
-
+   <title>Israelle and Sidney's Wedding</title>
   </head>
   <body>
+  <p>TOTAL RSVPS: <%= Rsvp.count %></p>
+  <p>TOTAL YES: <%= Rsvp.group(:coming).count["yes"]  %></p>
+  <p>TOTAL NO: <%= Rsvp.group(:coming).count["no"] %></p>
+  <p>TOTAL GUESTS BRINGING CHILDREN (note: can be more than one children per guest): <%= Rsvp.group(:mini_you).count["yes"] %></p>
+
     <table>
       <tr>
         <th>Name</th>
@@ -56,6 +61,33 @@
     <p>
       <% @rsvps.each do |rsvp| %>
         <% if rsvp.coming == 'no' %>
+          <%= rsvp.email %>,
+        <% end %>
+      <% end %>
+    </p>
+
+    <h3>Emails of out of town guests</h3>
+    <p>
+      <% @rsvps.each do |rsvp| %>
+        <% if rsvp.out_of_town == 'yes' %>
+          <%= rsvp.email %>,
+        <% end %>
+      <% end %>
+    </p>
+    
+    <h3>Emails of guests that can bring a dish</h3>
+    <p>
+      <% @rsvps.each do |rsvp| %>
+        <% if rsvp.bring_dish == true %>
+          <%= rsvp.email %>,
+        <% end %>
+      <% end %>
+    </p>
+
+    <h3>Emails of guests that are bringing children</h3>
+    <p>
+      <% @rsvps.each do |rsvp| %>
+        <% if rsvp.mini_you == 'yes' %>
           <%= rsvp.email %>,
         <% end %>
       <% end %>

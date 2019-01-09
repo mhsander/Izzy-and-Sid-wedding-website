@@ -87,13 +87,18 @@ h4 {
 .rsvps input[type="checkbox"] {
   zoom: 1.6;
   width: 30px;
-  background-color: pink;
+  background-color: yellow;
 }
 
 #rsvps_confirmation {
   padding: 5px;
   margin: 5px;
-  color: #486f65;
   font-family: roman sd, "Times New Roman", Times, serif;
   text-align: center;
+}
+
+#rsvps_confirmation h1,
+h2,
+a {
+  color: #486f65;
 }
