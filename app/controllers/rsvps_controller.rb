@@ -52,7 +52,7 @@ class RsvpsController < ApplicationController
   def rsvp_params
     params.require(:rsvp).permit(:name, :address, :phone, :email, :coming,
                                  :plus_one_name, :mini_you, :name_and_age,
-                                 :food, :allergies, :terms)
+                                 :food, :allergies, :out_of_town, :bring_dish, :email_confirmation, :terms)
   end
 
 end

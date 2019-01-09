@@ -69,8 +69,22 @@
     <%= form.text_field :allergies %>
   </p>
 
+  <p>Are you an out of town guest?</p>
+    <%= form.radio_button(:out_of_town, 'yes') %>
+    <%= form.label :yes %><br><br>
+    <%= form.radio_button(:out_of_town, 'no') %>
+    <%= form.label :no %>
+
+    <p>At Skyberry, we believe in community, so we are proposing a family-style type of dinner. 
+    On top of the feast that we’ll be offering, we would love some of our amazing local friends to help fill our buffet.
+    </p>
+
+  <p><%= form.check_box :bring_dish %>
+  Can you bring a delicious dish to share? 
+  More information will come to our beautiful friends who click this box!</p>
+
   <p><br>
-    <%= form.check_box :terms %> I agree that Izzy and Sid are AWESOME! 🌻
+  <%= form.check_box :terms %> I agree that Izzy and Sid are AWESOME! 🌻
   </p>
 
   <p><br>

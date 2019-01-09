@@ -19,6 +19,8 @@
       <h2>Name and age: <%= @rsvp.name_and_age %></h2>
       <h2>Food: <%= @rsvp.food %></h2>
       <h2>Allergies: <%= @rsvp.allergies %></h2>
+      <h2>Are you an out of town guest? <%= @rsvp.out_of_town %></h2>
+      <h2>Can you bring a delicious dish to share? <%= @rsvp.bring_dish ? 'yes - you are awesome!' : 'no' %></h2>
       <h2><%= link_to 'Edit RSVP', edit_rsvp_path(@rsvp) %></h2>
     </div>
     <div class="footer">
