@@ -75,29 +75,14 @@ h4 {
 
 .footer a {
   background: #486f65;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#486f65),
-    to(#486f65)
-  );
-  background: -webkit-linear-gradient(top, #486f65, #486f65);
-  background: -moz-linear-gradient(top, #486f65, #486f65);
-  background: -ms-linear-gradient(top, #486f65, #486f65);
-  background: -o-linear-gradient(top, #486f65, #486f65);
   padding: 1vw 2vw;
   -webkit-border-radius: 4vw;
   -moz-border-radius: 4vw;
-  -webkit-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
-  -moz-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
-  box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
-  text-shadow: rgba(0, 0, 0, 0.4) 0 1px 0;
   color: #ebeae8;
   font-size: 1.2vw;
   font-family: roman sd, sans-serif, Courier;
-  text-decoration: none;
   vertical-align: middle;
+  text-decoration: none;
 }
 .footer a:hover {
   background: #cd9301;
@@ -127,29 +112,16 @@ h4 {
 
 .home_button a {
   background: #3f2501;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#3f2501),
-    to(#3f2501)
-  );
-  background: -webkit-linear-gradient(top, #3f2501, #3f2501);
-  background: -moz-linear-gradient(top, #3f2501, #3f2501);
-  background: -ms-linear-gradient(top, #3f2501, #3f2501);
-  background: -o-linear-gradient(top, #3f2501, #3f2501);
   padding: 1vw 6vw;
   -webkit-border-radius: 4vw;
   -moz-border-radius: 4vw;
-  -webkit-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
-  -moz-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
-  box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
   text-shadow: rgba(0, 0, 0, 0.4) 0 1px 0;
   color: #ebeae8;
   font-size: 1.2vw;
   font-family: roman sd, sans-serif, Courier;
   text-decoration: none;
   vertical-align: middle;
+  text-decoration-color: #3f2501;
 }
 .home_button a:hover {
   background: #486f65;
