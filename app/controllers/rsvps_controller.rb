@@ -1,7 +1,7 @@
 #controller for RSVP form
 
 class RsvpsController < ApplicationController
-  http_basic_authenticate_with name: 'IzzySid', password: 'wedding2019', only: [:destroy, :index]
+  http_basic_authenticate_with name: 'IsraSid', password: 'wedding2019', only: [:destroy, :index]
 
   def index
     @rsvps = Rsvp.all

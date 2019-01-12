@@ -1,7 +1,7 @@
 #Controller for page where guests can leave a comment to the grooms
 
 class CommentsController < ApplicationController
-  http_basic_authenticate_with name: "IzzySid", password: "wedding2019", only: [:edit, :destroy]
+  http_basic_authenticate_with name: "IsraSid", password: "wedding2019", only: [:edit, :destroy]
 
   def index
     @comments = Comment.all
